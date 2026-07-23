@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glanz Car Wash | Premium Auto Detailing & Care</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Glanz Car Wash offers premium auto detailing, professional car care, ceramic coating, and luxury wash packages. Experience the ultimate shine with our expert team.">
+    <meta name="keywords" content="car wash, premium car care, auto detailing, ceramic coating, Glanz car wash, luxury car wash, car accessories, car subscription">
+    <meta name="author" content="Glanz Car Wash">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://glanzcarwash.com/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --accent-gold: #D8AB44;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background: rgba(5, 5, 5, 0.8);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--accent-gold);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .btn {
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-primary {
+            background: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            color: var(--bg-color);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, rgba(216, 171, 68, 0.15) 0%, var(--bg-color) 70%);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            animation: slideUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 40px;
+            animation: slideUp 1s ease-out 0.3s forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .hero .cta-group {
+            animation: slideUp 1s ease-out 0.6s forwards;
+            opacity: 0;
+            transform: translateY(30px);
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Sections General */
+        section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Glassmorphism Cards */
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 40px 30px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transform: skewX(-25deg);
+            transition: 0.5s;
+        }
+
+        .card:hover::before {
+            left: 150%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-gold);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-gold);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* How We Work */
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 24px;
+            height: 100%;
+            width: 2px;
+            background: var(--glass-border);
+        }
+
+        .step {
+            display: flex;
+            gap: 30px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-color);
+            border: 2px solid var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            z-index: 1;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(5, 5, 5, 0.95);
+            border-top: 1px solid var(--glass-border);
+            padding: 60px 20px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+
+        .footer-col h4 {
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.1em;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-secondary);
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--text-primary);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--glass-border);
+            padding-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">GLANZ</div>
+        <div class="nav-links">
+            <a href="#about">Who We Are</a>
+            <a href="#services">Services</a>
+            <a href="#process">How It Works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#blog">Blog</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn btn-outline" style="margin-right: 10px;">Login</button>
+            <button class="btn btn-primary">Book Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Perfection in <br><span style="color: var(--accent-gold);">Every Detail</span></h1>
+        <p>Glanz is not just a car wash. We provide luxury car care, advanced detailing, and premium protective coatings to preserve your vehicle's ultimate shine.</p>
+        <div class="cta-group">
+            <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Explore Services</button>
+            <button class="btn btn-outline">Subscribe to Glanz</button>
+        </div>
+    </header>
+
+    <!-- Who We Are Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>Who We Are</h2>
+            <p>Redefining Automotive Excellence</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+            <p>At <strong>Glanz</strong>, we believe your vehicle is a reflection of your standards. We are a premier automotive detailing and car care studio dedicated to perfection. Combining state-of-the-art technology, industry-leading products, and meticulous craftsmanship, we restore and protect the beauty of every vehicle that enters our bays.</p>
+            <br>
+            <p>Our mission is simple: to provide an unparalleled car care experience. Whether you drive a daily commuter or a luxury exotic, our expert technicians treat every car with the utmost respect and precision.</p>
+        </div>
+    </section>
+
+    <!-- What We Do / Services Section -->
+    <section id="services">
+        <div class="section-header">
+            <h2>What We Do</h2>
+            <p>Comprehensive Car Care Solutions tailored to your vehicle's specific needs.</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Service 1 -->
+            <div class="card">
+                <h3>Signature Car Wash</h3>
+                <p>A meticulous, scratch-free hand wash process using pH-neutral soaps and filtered water. We ensure every crevice is cleaned, leaving a spot-free, brilliant finish.</p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="card">
+                <h3>Advanced Car Care</h3>
+                <p>From paint correction and swirl removal to interior deep cleaning and leather conditioning. We restore your vehicle to its showroom condition.</p>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="card">
+                <h3>Premium Accessories</h3>
+                <p>Enhance your driving experience with our curated selection of high-end automotive accessories, air fresheners, and professional-grade maintenance products.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card">
+                <h3>Packages & Subscriptions</h3>
+                <p>Keep your car looking flawless year-round with our Glanz Membership. Enjoy priority booking, discounted services, and regular maintenance washes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section id="process">
+        <div class="section-header">
+            <h2>How We Work</h2>
+            <p>A seamless, transparent process designed around your convenience.</p>
+        </div>
+        
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Book Online</h3>
+                        <p>Select your desired service or package through our easy-to-use booking platform. Choose a time slot that fits your schedule.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Vehicle Handover</h3>
+                        <p>Bring your car to our studio or opt for our premium pickup service. We conduct a thorough pre-inspection with you.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>The Glanz Treatment</h3>
+                        <p>Our master technicians perform the requested services using premium tools and products, adhering to our strict quality standards.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Final Inspection & Delivery</h3>
+                        <p>We review every detail before presenting the finished vehicle to you. Drive away in a car that feels brand new.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="section-header">
+            <h2>Client Stories</h2>
+            <p>Don't just take our word for it. Here is what our satisfied clients have to say.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <p style="font-style: italic; margin-bottom: 20px;">"The attention to detail at Glanz is unmatched. My car looks better than the day I bought it. Highly recommend their ceramic coating!"</p>
+                <h4 style="color: var(--accent-gold); font-family: 'Outfit', sans-serif;">- Michael T.</h4>
+            </div>
+            <div class="card">
+                <p style="font-style: italic; margin-bottom: 20px;">"Their pickup and drop-off service is incredibly convenient. The interior detailing was flawless, completely removing some tough stains."</p>
+                <h4 style="color: var(--accent-gold); font-family: 'Outfit', sans-serif;">- Sarah J.</h4>
+            </div>
+            <div class="card">
+                <p style="font-style: italic; margin-bottom: 20px;">"I've tried many luxury car washes, but Glanz is on another level. The subscription package is totally worth it for maintaining the shine."</p>
+                <h4 style="color: var(--accent-gold); font-family: 'Outfit', sans-serif;">- David K.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="section-header">
+            <h2>Latest Insights</h2>
+            <p>Expert tips, car care guides, and the latest news from the Glanz team.</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Blog Post 1 -->
+            <div class="card" style="padding: 0;">
+                <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=800') center/cover;"></div>
+                <div style="padding: 30px;">
+                    <span style="font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.1em;">Car Care</span>
+                    <h3 style="margin-top: 10px; font-size: 1.3rem;">Ceramic Coating vs. Wax</h3>
+                    <p style="margin: 15px 0;">Discover the key differences between traditional wax and modern ceramic coatings to protect your vehicle's paint.</p>
+                    <a href="#" style="color: var(--accent-gold); font-weight: 600; font-size: 0.9rem;">Read More &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="card" style="padding: 0;">
+                <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&q=80&w=800') center/cover;"></div>
+                <div style="padding: 30px;">
+                    <span style="font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.1em;">Tips & Tricks</span>
+                    <h3 style="margin-top: 10px; font-size: 1.3rem;">5 Common Washing Mistakes</h3>
+                    <p style="margin: 15px 0;">Avoid these frequent car washing errors that can introduce swirl marks and scratch your pristine clear coat.</p>
+                    <a href="#" style="color: var(--accent-gold); font-weight: 600; font-size: 0.9rem;">Read More &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="card" style="padding: 0;">
+                <div style="height: 200px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800') center/cover;"></div>
+                <div style="padding: 30px;">
+                    <span style="font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.1em;">Industry News</span>
+                    <h3 style="margin-top: 10px; font-size: 1.3rem;">Eco-Friendly Auto Detailing</h3>
+                    <p style="margin: 15px 0;">How new technologies and waterless wash solutions are making premium car care more sustainable.</p>
+                    <a href="#" style="color: var(--accent-gold); font-weight: 600; font-size: 0.9rem;">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="font-size: 20px; margin-bottom: 15px;">GLANZ</div>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Elevating the standard of automotive detailing.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services/car-wash">Car Wash</a></li>
+                    <li><a href="/services/car-care">Car Care</a></li>
+                    <li><a href="/services/accessories">Accessories</a></li>
+                    <li><a href="/packages">Subscriptions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Glanz Car Wash. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Simple Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.card, .step');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease-out';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

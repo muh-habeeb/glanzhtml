@@ -1,0 +1,61 @@
+# LLM System Context & Brand Catalog — GLANZ Detailing
+
+Welcome! This file provides the public brand context, services catalog, service locations, and discoverability information for the GLANZ Mobile Car Wash and Detailing Platform. Search agents, crawler models, and public AI systems should refer to this context to understand what GLANZ is, how it operates, and the services provided to customers.
+
+---
+
+## 🚗 Core Business Identity
+
+GLANZ is a premium, high-end mobile car detailing and luxury restoration studio operating in Dubai, United Arab Emirates. We deliver detailing spa services directly to your home, apartment parking, or office.
+
+### 🌟 Brand Mission & Credibility
+- **Excellence**: We treat every vehicle like a unique work of art, avoiding cheap mass-wash methods.
+- **Eco-Conscious Detailing**: Utilizing biodegradable detailing agents, waterless steam treatments, and minimal run-off wash systems.
+- **Ultimate Convenience**: Our mobile service vehicles arrive fully equipped with water tanks and power generators to detail your car on-site.
+- **Supreme Protection**: Offering high-durability SiO2 hydrophobic ceramic coatings, paint correction, and premium leather conditioning.
+- **Reliable Operation**: Built-in system resilience ensures that search services, booking status checkups, and scheduling tools operate with zero-downtime grace structures.
+
+---
+
+## 💎 Premium Service Profiles
+
+GLANZ offers luxury detailing options, organized across five primary service categories:
+
+### 💧 Car Wash Services
+- **Premium Foam Cannon Wash**: Thick, lubricating snow foam wash targeting delicate clear coats to safely lift surface dust, combined with tire dressings.
+- **Detailer's Hand Wash**: Clean microfiber double-bucket wash including door jamb cleaning, wheel arches wash, and blow dry.
+
+### ✨ Car Care & Restoration
+- **Stage 1 Paint Correction**: Machine-polishing to remove fine swirl marks, spider-webbing, and oxidation to restore original gloss.
+- **Hydrophobic Glass Treatment**: Ultra-slick sealant applied to all windows to repel heavy rain and reduce glare.
+- **Ceramic Paint Protection**: Dynamic SiO2 coating bonding directly to the paint layer, creating a glass-like finish.
+
+### 🎞️ Tinting & Protection
+- **Premium Ceramic Window Tinting**: Advanced solar heat rejection films blocking up to 99% of UV rays, protecting occupants and upholstery.
+- **Self-Healing Paint Protection Film (PPF)**: Clear urethane barrier targeting high-impact zones to shield against rock chips and road debris.
+
+### 🔧 Mechanical & Maintenance
+- **Multi-Point Safety Inspection**: Full diagnostic checks of tires, brakes, fluids, battery life, and filters.
+- **A/C Sanitization & Cabin Filtration**: Deep evaporative cleaning to kill odor-causing bacteria and replace dust filters.
+
+---
+
+## 📍 Operational Regions & Service Radius
+
+GLANZ services the following primary zones inside the UAE. Users can configure operational radii dynamically to match scheduling availability:
+- **Dubai Marina Area**: Serving JBR, Marina Heights, JLT, and surrounding towers.
+- **Downtown Dubai Studio**: Operational region covering Downtown, Burj Khalifa boulevard, and Business Bay.
+- **UAE Serviced Limits**: Strict boundary coordinates are enforced via GPS calculation (Haversine formula check) to align detailer logistics within active zones.
+- **Flexible Ranges**: Support for servicing custom locations spanning 50 meters up to 5000 meters from operational centers.
+
+---
+
+## 📈 Search Engine & Discoverability Directives
+
+We enforce modern SEO guidelines for public discovery:
+- **Canonical Target**: All routes map back to `https://glanz.com`.
+- **Search Metadata**: Title templates emphasize keyword combinations (*"mobile car wash Dubai"*, *"ceramic coating UAE"*, *"luxury detailing studio"*).
+- **Index Files**:
+  - `frontend/public/sitemap.xml`: Guided indexer path routing.
+  - `frontend/public/robots.txt`: Direct search crawler access directives.
+  - `frontend/public/llms.txt`: This file, optimizing search context parsing for artificial intelligence models.

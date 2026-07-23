@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /staff/
+Disallow: /dashboard/
+
+# Block AI crawlers specifically from indexing sensitive administration panels
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Anthropic-ai
+Disallow: /
+
+# Sitemaps
+Sitemap: https://glanz.com/sitemap.xml
