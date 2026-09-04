@@ -18,4 +18,4 @@ User-agent: Anthropic-ai
 Disallow: /
 
 # Sitemaps
-Sitemap: https://glanz.com/sitemap.xml
+#Sitemap: https://glanz.com/sitemap.xml
