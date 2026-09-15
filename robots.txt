@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
+Allow: /car-wash.html
+Allow: /car-care.html
+Allow: /car-service.html
+Allow: /packages.html
+Allow: /accessories.html
 Disallow: /admin/
 Disallow: /staff/
 Disallow: /dashboard/

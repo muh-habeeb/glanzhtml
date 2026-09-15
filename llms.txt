@@ -21,22 +21,23 @@ GLANZ is a premium, high-end mobile car detailing and luxury restoration studio 
 
 GLANZ offers luxury detailing options, organized across five primary service categories:
 
-### 💧 Car Wash Services
-- **Premium Foam Cannon Wash**: Thick, lubricating snow foam wash targeting delicate clear coats to safely lift surface dust, combined with tire dressings.
-- **Detailer's Hand Wash**: Clean microfiber double-bucket wash including door jamb cleaning, wheel arches wash, and blow dry.
+### 1. 💧 Car Wash Services
+- **SUV, Sedan & Bike Packages**: Basic, Standard, and Premium wash packages. Includes exterior foam wash, wheel rinse, interior vacuum, hand dry, and steam wash.
 
-### ✨ Car Care & Restoration
-- **Stage 1 Paint Correction**: Machine-polishing to remove fine swirl marks, spider-webbing, and oxidation to restore original gloss.
-- **Hydrophobic Glass Treatment**: Ultra-slick sealant applied to all windows to repel heavy rain and reduce glare.
-- **Ceramic Paint Protection**: Dynamic SiO2 coating bonding directly to the paint layer, creating a glass-like finish.
+### 2. ✨ Car Care & Detailing
+- **Interior & Exterior Detailing**: Deep refresh and mirror finish services.
+- **Ceramic Coating**: High-durability SiO2 hydrophobic ceramic coatings.
+- **Paint Protection Film (PPF)**: Transparent and Colored self-healing urethane barriers targeting high-impact zones.
 
-### 🎞️ Tinting & Protection
-- **Premium Ceramic Window Tinting**: Advanced solar heat rejection films blocking up to 99% of UV rays, protecting occupants and upholstery.
-- **Self-Healing Paint Protection Film (PPF)**: Clear urethane barrier targeting high-impact zones to shield against rock chips and road debris.
+### 3. 🔧 Car Service & Maintenance
+- **Essential Services**: Oil changes (Basic & Premium), Ozone Treatment, Battery Replacement, Tire Replacement, and Wiper Blade Replacement.
+- **Window Tinting**: Advanced solar heat rejection films blocking up to 99% of UV rays.
 
-### 🔧 Mechanical & Maintenance
-- **Multi-Point Safety Inspection**: Full diagnostic checks of tires, brakes, fluids, battery life, and filters.
-- **A/C Sanitization & Cabin Filtration**: Deep evaporative cleaning to kill odor-causing bacteria and replace dust filters.
+### 4. 📅 Membership Packages
+- **Weekly Once, Twice, & Thrice Clubs**: Recurring subscription memberships providing unlimited or scheduled priority access to routine car washes.
+
+### 5. 🛍️ Car Accessories
+- **Premium Extras**: Branded Glanz Air Fresheners, Self Car Cleaning Kits, and Handcrafted interior cleaning cloths.
 
 ---
 
@@ -56,6 +57,6 @@ We enforce modern SEO guidelines for public discovery:
 - **Canonical Target**: All routes map back to `https://glanz.com`.
 - **Search Metadata**: Title templates emphasize keyword combinations (*"mobile car wash Dubai"*, *"ceramic coating UAE"*, *"luxury detailing studio"*).
 - **Index Files**:
-  - `frontend/public/sitemap.xml`: Guided indexer path routing.
-  - `frontend/public/robots.txt`: Direct search crawler access directives.
-  - `frontend/public/llms.txt`: This file, optimizing search context parsing for artificial intelligence models.
+  - `sitemap.xml`: Guided indexer path routing.
+  - `robots.txt`: Direct search crawler access directives.
+  - `llms.txt`: This file, optimizing search context parsing for artificial intelligence models.
